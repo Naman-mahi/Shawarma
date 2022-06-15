@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- color of address bar in mobile browser -->
+  <meta name="theme-color" content="#F5C332">
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="img/icons/roxlogo2.ico" type="image/x-icon">
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
+  <!-- datepicker css -->
+  <link rel="stylesheet" href="css/plugins/datepicker.css">
+  <!-- mapbox css -->
+  <link href="css/plugins/mapbox-style.css" rel='stylesheet'>
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+  <!-- shawarma css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- page title -->
+  <title>Shawarma Rox</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  <!-- page title -->
+  <title>shawarma</title>
+  <script>
+  jQuery($ => {
+    // The speed of the scroll in milliseconds
+    const speed = 1000;
+
+    $('a[href*="#"]')
+      .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+      .unbind('click.smoothScroll')
+      .bind('click.smoothScroll', event => {
+        const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          event.preventDefault();
+          $('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+        }
+      });
+  });
+</script>
+  <style>
+
+  </style>
+  <script>
+
+
+    
+  </script>
+</head>
+
+<body>
+  <!-- app wrapper -->
+  <div class="sb-app">
+
+    <!-- click effect -->
+    <div class="sb-click-effect"></div>
+    <!-- loader -->
+   <!--  <div class="sb-load"></div> -->
+    <!-- top bar -->
+    <div class="sb-top-bar-frame">
+      <div class="sb-top-bar-bg"></div>
+      <div class="container">
+        <div class="sb-top-bar">
+          <a href="#home" class="sb-logo-frame">
+            <!-- logo img -->
+            <img src="img/illustrations/roxlogo2.png" alt="shawarma">
+          </a>
+<!-- menu -->
+          <div class="sb-right-side">
+            <nav id="sb-dynamic-menu" class="sb-menu-transition">
+              <ul class="sb-navigation">
+                <li >
+                  <a href="#home" class="sb-active">Home</a>
+
+                </li>
+                <li>
+                  <a href="#about" >About</a>
+
+                </li>
+               
+                <li>
+                  <a href="#menu"  class="sb-has-children">Menu</a>
+
+                </li>
+                <li>
+                  <a href="#testimonials"  class="sb-has-children">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#contact" class="sb-has-children">Contact</a>
+                </li>
+                 <li>
+          <a href="#">
+            <img src="https://img.icons8.com/color/30/undefined/twitter--v1.png"/></ion-icon>
+          </a>
+           </li>
+
+           <li>
+          <a href="#">
+            <img src="https://img.icons8.com/cute-clipart/30/undefined/instagram-new.png"/></ion-icon>
+          </a>
+          </li>
+
+          <li>
+          <a href="#">
+            <img src="https://img.icons8.com/color/30/undefined/facebook-new.png"/>
+          </a>
+          </li>
+
+          <!-- <li>
+          <a href="#">
+            <img src="https://img.icons8.com/color/30/undefined/youtube-play.png"/>
+          </a>
+</li> -->
+              </ul>
+
+
+
+            </nav>
+            <div class="sb-buttons-frame">
+
+              <!-- menu btn -->
+              <div class="sb-menu-btn">
+                <span></span>
+              </div>
+              <!-- info btn -->
+              <div class="sb-info-btn">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- info bar -->
+      <!-- info bar -->
+      <div class="sb-info-bar">
+        <div class="sb-infobar-content">
+          <div class="sb-ib-title-frame sb-mb-30">
+            <h4>Contact</h4><i class="fas fa-arrow-down"></i>
+          </div>
+          <ul class="sb-list sb-mb-30">
+            <li><b>Address:</b><span>Ontario 3581 Sheppard Ave<br> E,Scarborough,ON, M1T3K8</span></li>
+            <li><b>Working hours:</b><span>11:00 AM - 11:00 PM</span></li>
+            <li><b>Phone:</b><span>+1 6475509797</span></li>
+            <li><b>Email:</b><span>shawarmarox@mail.com</span></li>
+          </ul>
+          <div class="sb-ib-title-frame sb-mb-30">
+            <h4>Instagram</h49o9o><i class="fas fa-arrow-down"></i>
+          </div>
+          <ul class="sb-instagram sb-mb-30">
+            <li><a href="#."><img src="img/instagram/1.jpg" alt="instagram"></a></li>
+            <li><a href="#."><img src="img/instagram/2.jpg" alt="instagram"></a></li>
+            <li><a href="#."><img src="img/instagram/3.jpg" alt="instagram"></a></li>
+            <li><a href="#."><img src="img/instagram/4.jpg" alt="instagram"></a></li>
+            <li><a href="#."><img src="img/instagram/5.jpg" alt="instagram"></a></li>
+            <li><a href="#."><img src="img/instagram/6.jpg" alt="instagram"></a></li>
+          </ul>
+          <hr>
+
+        </a>
+        <ul class="sb-social">
+          <li><a href="#."><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#."><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#."><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#."><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- info bar end -->
+
+  </div>
+  <!-- top bar end -->
+
+  <!-- dynamic content -->
+  <div id="sb-dynamic-content" class="sb-transition-fade">
+
+    <!-- banner -->
+    <section class="sb-banner">
+      <div class="sb-bg-1">
+        <div></div>
+      </div>
+      <div class="container" id="home">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- main title -->
+            <div class="sb-main-title-frame">
+              <div class="sb-main-title">
+                <span class="sb-suptitle sb-mb-30">Hi, new friend!</span>
+                <h1 class="sb-mb-30">Brighten your <br>day with a delicious <br>shawarma!</h1>
+                
+                <!-- button -->
+                <a href="#" class="sb-btn">
+                  <span class="sb-icon">
+                    <img src="img/ui/icons/menu.svg" alt="icon">
+                  </span>
+                  <span>Come let's see whats in</span>
+                </a>
+                <!-- button end -->
+             <!--    <!-- button -->
+                <a href="about-1.html" class="sb-btn sb-btn-2 sb-btn-gray">
+                  <span class="sb-icon">
+                    <img src="img/ui/icons/arrow.svg" alt="icon">
+                  </span>
+                  <span>About us</span>
+                </a>
+                <!-- button end -->
+              </div>
+            </div> 
+            <!-- main title end -->
+          </div>
+          <div class="col-lg-6">
+            <div class="sb-ilustration-fix">
+              <div class="sb-illustration-1-2">
+                <img src="img/illustrations/food6.png" alt="food" class="sb-food-1">
+                <img src="img/illustrations/grill1.png" alt="food" class="sb-food-2">
+                <img src="img/illustrations/food5.png" alt="food" class="sb-food-3">
+                <!-- <div class="sb-illu-dialog-1">
+                  <span>😋</span> On-nom-nom...
+                </div>
+                <div class="sb-illu-dialog-2">
+                  <span>🥰</span> Sooooo delicious!
+                </div> -->
+                <div class="sb-cirkle-1"></div>
+                <div class="sb-cirkle-2"></div>
+                <div class="sb-cirkle-3"></div>
+                <div class="sb-cirkle-4"></div>
+                <div class="sb-cirkle-5"></div>
+                <img src="img/illustrations/3.svg" alt="phones" class="sb-pik-1">
+                <img src="img/illustrations/1.svg" alt="phones" class="sb-pik-2">
+                <img src="img/illustrations/2.svg" alt="phones" class="sb-pik-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- dynamic content -->
+    <div id="sb-dynamic-content" class="sb-transition-fade">
+
+      <!-- banner -->
+      <!-- <section class="sb-banner sb-banner-sm sb-banner-color">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12"> -->
+              <!-- main title -->
+              <!-- <div class="sb-main-title-frame">
+                <div class="sb-main-title text-center">
+                  <span class="sb-suptitle sb-mb-30">About us</span>
+                   <h4 class="sb-text sb-text-lg sb-mb-30">
+                    Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.
+                  </h4>
+                  <h6 class="sb-mb-30">There is no <span>love</span> more sincere <br> than the love of <span>food</span>.</h6>
+                 
+                  <ul class="sb-breadcrumbs">
+                    <li><a href="home-1.html">Home</a></li>
+                    <li><a href="#.">About us</a></li>
+                  </ul>
+                </div>
+              </div> -->
+              <!-- main title end -->
+            <!-- </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- banner end -->
+
+      <!-- About text -->
+      <section class="sb-about-text sb-p-90-0" id="about">
+        <div class="sb-bg-1" style="margin-top: 60px">
+          <div></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="sb-illustration-2 sb-mb-90">
+                <div class="sb-interior-frame">
+                  <img src="img/illustrations/main1.png" width=50% height=50% alt="interior" class="sb-interior" style="object-position: center">
+                </div>
+                
+                <div class="sb-cirkle-1"></div>
+                <div class="sb-cirkle-2"></div>
+                <div class="sb-cirkle-3"></div>
+                <div class="sb-cirkle-4"></div>
+                <div class="sb-experience">
+                  <div class="sb-exp-content">
+                    <p class="sb-h1 sb-mb-10"></p>
+                    <p class="sb-h3"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center sb-mb-60">
+              <h2 class="sb-mb-60">About us</h2>
+              <p class="sb-text sb-mb-30">
+                Faudantium magnam error temporibus ipsam aliquid neque quibusdam dolorum, quia ea numquam assumenda mollitia dolorem impedit. Voluptate at quis exercitationem officia temporibus adipisci quae totam enim
+                dolorum,
+                assumenda. Sapiente soluta nostrum reprehenderit a velit obcaecati facilis vitae magnam tenetur
+                neque vel itaque inventore eaque explicabo commodi maxime! Aliquam quasi, voluptates odio.
+              </p>
+              <p class="sb-text sb-mb-60">
+                Consectetur adipisicing elit. Cupiditate nesciunt amet facilis numquam, nam adipisci qui voluptate voluptas enim obcaecati veritatis animi nulla, mollitia commodi quaerat ex, autem ea
+                laborum.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About text end -->
+
+      <!-- video -->
+      <section class="sb-video">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="sb-mb-90">
+                <span class="sb-suptitle sb-mb-15">Promo video</span>
+                <h2 class="sb-mb-30">Explore the flavors and beyond..</h2>
+                <p class="sb-text sb-mb-30">
+                  Repellat, dolorem a. Qui ipsam quos, obcaecati mollitia consectetur ad vero minus neque sit architecto totam distineserunt pariatur adipisci rem aspernatur illum ex!
+                </p>
+                <!-- button -->
+                <a data-fancybox="" data-no-swup href="https://www.youtube.com/watch?v=F3zw1Gvn4Mk" class="sb-btn">
+                  <span class="sb-icon">
+                    <img src="img/ui/icons/play.svg" alt="icon">
+                  </span>
+                  <span>Promo video</span>
+                </a>
+                <!-- button end -->
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center">
+              <div class="sb-illustration-7 sb-mb-90">
+                <div class="sb-interior-frame">
+                  <img src="img/illustrations/food5.jpg" alt="interior" class="sb-interior">
+                  <a data-fancybox="" data-no-swup href="https://youtu.be/hB6rBJoQ3GU" class="sb-video-play"><i class="fas fa-play"></i></a>
+                </div>
+                <div class="sb-cirkle-1"></div>
+                <div class="sb-cirkle-2"></div>
+                <div class="sb-cirkle-3"></div>
+                <div class="sb-cirkle-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- video end -->
+
+      <!-- dynamic content -->
+      <div id="sb-dynamic-content" class="sb-transition-fade">
+
+        <!-- banner -->
+        <section class="sb-banner sb-banner-xs sb-banner-color">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- main title -->
+                <div class="sb-main-title-frame">
+                  <div class="sb-main-title">
+                    <h1 class="sb-h2">Shawarma Rox Menu</h1>
+                    <ul class="sb-breadcrumbs">
+                      <li id="#home">Home</a></li>
+                      <li><a href="#menu">Menu</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- main title end -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- banner end -->
+
+        <!-- menu section 1 -->
+        <section class="sb-menu-section sb-p-90-60" id="menu">
+          <div class="sb-bg-1">
+            <div></div>
+          </div>
+          <div class="container">
+            <!-- filter -->
+            <div class="sb-filter mb-30">
+
+              <a href="Platters" data-filter=".Platters" class="sb-filter-link"><h3>Platters</h3></a>
+              <a href="Wraps" data-filter=".Wraps" class="sb-filter-link"> <h3>Wraps</h3></a>
+              <a href="Rocks" data-filter=".Rocks" class="sb-filter-link"><h3>Rocks & Sticks</h3></a>
+              <a href="Combos" data-filter=".Combos" class="sb-filter-link"><h3>Combos</h3></a>
+              <a href="Apps" data-filter=".Apps" class="sb-filter-link"><h3>Apps & Sides</h3></a>
+              <a href="Salads" data-filter=".Salads" class="sb-filter-link"><h3>Salads</h3></a>
+
+            </div>
+            <!-- filter end -->
+            <div class="sb-masonry-grid">
+              <div class="sb-grid-sizer"></div>
+              <div class="sb-grid-item sb-item-50 Platters">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Chicken Shawarma (670 cals)</h4>
+                    <div class="sb-price">
+                      <sub>  </sub>
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      Marinated chicken and beef served with rice, garlic potatoes, salad, hummus & garlic paste.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Platters">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Beef Shawarma (730 cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 9
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      Marinated chicken and beef served with rice, garlic potatoes, salad, hummus & garlic paste.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Platters">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Mixed Shawarma (750 cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 4
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      Marinated beef served with rice, garlic potatos, salad, hummus & garlic paste.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Wraps">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Falafel on the Rocks</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 11
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      Ask the waiter
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Salads">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Chicken Salad</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 6
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Platters">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Beef Donair (Gyro) (1110 Cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 14
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Platters">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Falafel (940 Cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 11
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Platters">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Beef Kofta Kebob (660 Cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 6
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Platters">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Rox Special (890 Cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 14
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="sb-grid-item sb-item-50 Platters">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Philly Cheese Veggie (900 Cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 14
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="sb-grid-item sb-item-50 Platters">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Philly Cheese Steak (1180 Cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 6
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    <ul class="sb-stars">
+                      
+                  </div>
+                </div>
+              </div>
+
+              <div class="sb-grid-item sb-item-50 Platters">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Shish Tawook (865 Cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 6
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    <ul class="sb-stars">
+                      
+                  </div>
+                </div>
+              </div>
+
+              <div class="sb-grid-item sb-item-50 Wraps">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Chicken Shawarma</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 7
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Wraps">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Mixed Shawarma</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 12
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Wraps">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Beef Donair (Gyro)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 14
+                    </div>
+                  </div>
+
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Rocks">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Mix Shawarma on the Rocks</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 9
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Rocks">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Mix Shawarma on the Sticks</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 4
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Combos">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">1 Chicken Wrap (Regular)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 11
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Combos">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">1 Salad (Any Regular)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 6
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    <ul class="sb-stars">
+                      
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Apps">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Chicken Souvlaki Skewer</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 14
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Apps">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Beef Kofta Kabob Skewer</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 11
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Apps">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Baba Ghanoush (285 cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 6
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Apps">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Baklava (6 Pcs) (230 cals/ Pc)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 14
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Apps">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Falafel (55 cals)</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 6
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 desserts">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Carpaccio de daurade</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 7
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Apps">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Chili Fries</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 12
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Salads">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Caesar Salad</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 14
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Salads">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Greek Salad</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 9
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Salads">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Garden Salad</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 4
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Salads">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Chicken Salad</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 11
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Salads">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">Falafel Salad</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 6
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Combos">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">3 Pita</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 14
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Combos">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">2 Pop Cans</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 11
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="sb-grid-item sb-item-50 Combos">
+                <div class="sb-menu-item sb-mb-30">
+                  <div class="sb-card-tp">
+                    <h4 class="sb-card-title">1 Hummus</h4>
+                    <div class="sb-price">
+                      <sub>$</sub> 6
+                    </div>
+                  </div>
+                  <div class="sb-description">
+                    <p class="sb-text sb-mb-15">
+                      <span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- menu end -->
+
+
+        <!-- dynamic content -->
+        <div id="sb-dynamic-content" class="sb-transition-fade">
+
+          <!-- banner -->
+          <section class="sb-banner sb-banner-xs sb-banner-color">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <!-- main title -->
+                  <div class="sb-main-title-frame">
+                    <div class="sb-main-title">
+                      <h1 class="sb-h2">shawarma Review</h1>
+                      <ul class="sb-breadcrumbs">
+                        <li><a href="home-1.html">Home</a></li>
+                        <li><a href="#.">Reviews</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- main title end -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- banner end -->
+
+          <!-- revievs -->
+          <section class="sb-reviews sb-p-0-90" id="testimonials">
+            <div class="container">
+              <div class="sb-group-title sb-mb-30">
+                <div class="sb-left sb-mb-30">
+                  <h2 class="sb-mb-30">What our <span>customers</span> say</h2>
+                  <p class="sb-text">
+                    First time in Shawarma Rox and YOU have to go! It’s the cutest little spot with amazing food.</br> The Rumali Shawarma is to die for. IT WAS FIRE!! The service we received was so amazing and we will definitely be back again.
+                  </p>
+                </div>
+                <div class="sb-right sb-mb-30">
+                  <!-- slider navigation -->
+                  <div class="sb-slider-nav">
+                    <div class="sb-prev-btn sb-reviews-prev">
+                      <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div class="sb-next-btn sb-reviews-next">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </div>
+                  <!-- slider navigation end -->
+                  <!-- button -->
+                  <a href="reviews.html" class="sb-btn">
+                    <span class="sb-icon">
+                      <img src="img/ui/icons/dialog.svg" alt="icon">
+                    </span>
+                    <span>All reviews</span>
+                  </a>
+                  <!-- button end -->
+                </div>
+              </div>
+              <div class="swiper-container sb-reviews-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="sb-review-card">
+                      <div class="sb-review-header sb-mb-15">
+                        <h4 class="sb-mb-15">Very tasty</h4>
+                        <ul class="sb-stars">
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <p class="sb-text sb-mb-15">
+                        " It’s a great experience."
+                      </p>
+                      <div class="sb-author-frame">
+                        <div class="sb-avatar-frame">
+                          <img src="img/faces/1.jpg" alt="Guest">
+                        </div>
+                        <h4>Emma Newman</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sb-review-card">
+                      <div class="sb-review-header sb-mb-15">
+                        <h4 class="sb-mb-15">I have lunch here every day</h4>
+                        <ul class="sb-stars">
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <p class="sb-text sb-mb-15">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi inventore possimus laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus
+                        tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam labore, aliquam dolor harum!
+                      </p>
+                      <div class="sb-author-frame">
+                        <div class="sb-avatar-frame">
+                          <img src="img/faces/2.jpg" alt="Guest">
+                        </div>
+                        <h4>Paul Trueman</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sb-review-card">
+                      <div class="sb-review-header sb-mb-15">
+                        <h4 class="sb-mb-15">Great service</h4>
+                        <ul class="sb-stars">
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li class="sb-empty"><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <p class="sb-text sb-mb-15">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi inventore possimus laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus
+                        tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam labore, aliquam dolor harum!
+                      </p>
+                      <div class="sb-author-frame">
+                        <div class="sb-avatar-frame">
+                          <img src="img/faces/3.jpg" alt="Guest">
+                        </div>
+                        <h4>Viktoria Freeman</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sb-review-card">
+                      <div class="sb-review-header sb-mb-15">
+                        <h4 class="sb-mb-15">shawarma is amazing!</h4>
+                        <ul class="sb-stars">
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <p class="sb-text sb-mb-15">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi inventore possimus laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus
+                        tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam labore, aliquam dolor harum!
+                      </p>
+                      <div class="sb-author-frame">
+                        <div class="sb-avatar-frame">
+                          <img src="img/faces/4.jpg" alt="Guest">
+                        </div>
+                        <h4>Audrey Oldman</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- revievs end -->
+
+
+          <!-- dynamic content -->
+          <div id="sb-dynamic-content" class="sb-transition-fade">
+
+            <!-- banner -->
+            <section id="#contact" class="sb-banner sb-banner-color">
+              <div class="container" id="contact">
+                <div class="row align-items-center">
+                  <div class="col-lg-7">
+                    <!-- main title -->
+                    <div class="sb-main-title-frame">
+                      <div class="sb-main-title">
+                        <span class="sb-suptitle sb-mb-30">Contact</span>
+                        <h1 class="sb-mb-30">Get in <span>Touch with us</span></h1>
+                        <!-- <p class="sb-text sb-text-lg sb-mb-30">
+                          Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.
+                        </p> -->
+                        <ul class="sb-breadcrumbs">
+                          <li><a href="home-1.html">Home</a></li>
+                          <li><a href="menu-1.html">Contact</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- main title end -->
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="sb-contact-form-frame">
+                      <div class="sb-illustration-9">
+
+                        <div class="sb-cirkle-1"></div>
+                        <div class="sb-cirkle-2"></div>
+                        <div class="sb-cirkle-3"></div>
+                      </div>
+                      <div class="sb-form-content">
+                        <div class="sb-main-content">
+                          <h3 class="sb-mb-30">Send Message</h3>
+                          <form id="form">
+                            <div class="sb-group-input">
+                              <input type="text" name="name" required>
+                              <span class="sb-bar"></span>
+                              <label>Name</label>
+                            </div>
+                            <div class="sb-group-input">
+                              <input type="email" name="email" required>
+                              <span class="sb-bar"></span>
+                              <label>Email</label>
+                            </div>
+                            <div class="sb-group-input">
+                              <textarea name="text" required></textarea>
+                              <span class="sb-bar"></span>
+                              <label>Message</label>
+                            </div>
+                            <p class="sb-text sb-text-xs sb-mb-30">
+                              *We promise not to disclose your <br>personal information to third parties.
+                            </p>
+                            <!-- button -->
+                            <button class="sb-btn sb-cf-submit sb-show-success">
+                              <span class="sb-icon">
+                                <img src="img/ui/icons/arrow.svg" alt="icon">
+                              </span>
+                              <a href="contactus.html">Send</a>
+                            </button>
+                            <!-- button end -->
+                          </form>
+                        </div>
+                        <div class="sb-success-result">
+                          <img src="img/ui/success.jpg" alt="success" class="sb-mb-15">
+                          <div class="sb-success-title sb-mb-15">
+                            Success!
+                          </div>
+                          <p class="sb-text sb-mb-15">
+                            Your message has been sent <br>successfully
+                          </p>
+                          <!-- button -->
+                          <a href="home-1.html" class="sb-btn sb-btn-2">
+                            <span class="sb-icon">
+                              <img src="img/ui/icons/arrow-2.svg" alt="icon">
+                            </span>
+                            <span>Back to home</span>
+                          </a>
+                          <!-- button end -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- banner end -->
+
+            <!-- contact info -->
+            <section class="sb-p-90-30">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="sb-features-item sb-mb-60">
+
+                      <div class="sb-feature-text">
+                        <h3 class="sb-mb-15">Welcome</h3>
+                        <p class="sb-text">
+                          Ontario
+                          3581 Sheppard Ave E,Scarborough,ON, M1T3K8
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="sb-features-item sb-mb-60">
+
+                      <div class="sb-feature-text">
+                        <h3 class="sb-mb-15">Call</h3>
+                        <p class="sb-text">
+                          +1 6475509797
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="sb-features-item sb-mb-60">
+
+                      <div class="sb-feature-text">
+                        <h3 class="sb-mb-15">Write</h3>
+                        <p class="sb-text">
+                          shawarmarox@mail.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- contact info end -->
+
+            <!-- map -->
+            <div class="sb-map-frame">
+              <div id="map" class="sb-map"></div>
+              <div class="sb-lock">
+                <i class="fas fa-lock"></i>
+              </div>
+            </div>
+            <!-- map end -->
+
+
+
+            <!-- footer -->
+            <footer>
+              <div class="container">
+                <div class="sb-footer-frame">
+                  <a href="home-1.html" class="sb-logo-frame">
+                    <!-- logo img -->
+                    <img src="img/ui/roxlogo2.png" alt="shawarma">
+                  </a>
+                  <ul class="sb-social">
+                    <li><a href="#."><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#."><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#."><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#."><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+                  <div class="sb-copy">
+                    &copy;2022 shawarma. All Rights Reserved.
+                    <p><emp>Powered by Quantum Leap Solutions</emp></p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- footer end -->
+
+          </div>
+          <!-- dynamic content end -->
+
+
+
+        </div>
+        <!-- app wrapper end -->
+
+        <!-- jquery js -->
+        <script src="js/plugins/jquery.min.js"></script>
+        <!-- smooth scroll js -->
+        <script src="js/plugins/smooth-scroll.js"></script>
+        <!-- swup js -->
+        <script src="js/plugins/swup.min.js"></script>
+        <!-- swiper js -->
+        <script src="js/plugins/swiper.min.js"></script>
+        <!-- datepicker js -->
+        <script src="js/plugins/datepicker.js"></script>
+        <!-- isotope js -->
+        <script src="js/plugins/isotope.js"></script>
+        <!-- sticky -->
+        <script src="js/plugins/sticky.js"></script>
+        <!-- mapbox js -->
+        <script src="js/plugins/mapbox.min.js"></script>
+        <!-- fancybox js -->
+        <script src="js/plugins/fancybox.min.js"></script>
+        <!-- shawarma js -->
+        <script src="js/main.js"></script>
+
+      </body>
+
+
+      <!-- Mirrored from elanta.app/nazar/shawarma-demo/home-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 17:37:03 GMT -->
+    </html>
