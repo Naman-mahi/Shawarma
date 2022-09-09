@@ -479,12 +479,14 @@ $(function() {
     click effect
 
     ***************************/
+    /*
     $('a[href]:not([href^="mailto\\:"], [href$="\\#"], [href$="\\#."])').on('click', function() {
       $(this).addClass('sb-click');
     });
     $('.sb-breadcrumbs a[href]:not([href^="mailto\\:"], [href$="\\#"], [href$="\\#."])').on('click', function() {
       $('.sb-breadcrumbs').addClass('sb-click');
     });
+    */
     /***************************
 
     add to cart
