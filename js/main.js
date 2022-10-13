@@ -410,7 +410,7 @@ $(function() {
 
   ------------------------------------------------------------
   ----------------------------------------------------------*/
-  document.addEventListener("swup:contentReplaced", function() {
+/*  document.addEventListener("swup:contentReplaced", function() {
     $('.sb-info-btn , .sb-info-bar , .sb-minicart , .sb-menu-btn , .sb-navigation').removeClass('sb-active');
     $('.sb-top-bar-frame').removeClass('sb-scroll');
     $('a').removeClass('sb-click');
@@ -421,7 +421,7 @@ $(function() {
         duration: 0,
         complete: function() {}
       });
-    }
+    }*/
     /***************************
 
     faq
@@ -479,14 +479,14 @@ $(function() {
     click effect
 
     ***************************/
-    /*
+    
     $('a[href]:not([href^="mailto\\:"], [href$="\\#"], [href$="\\#."])').on('click', function() {
       $(this).addClass('sb-click');
     });
     $('.sb-breadcrumbs a[href]:not([href^="mailto\\:"], [href$="\\#"], [href$="\\#."])').on('click', function() {
       $('.sb-breadcrumbs').addClass('sb-click');
     });
-    */
+    
     /***************************
 
     add to cart
